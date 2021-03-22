@@ -1,13 +1,19 @@
-.pokemonCard{
- background-color: #f8edeb;
- width: 230px;
- text-align: center;
- transition: transform 1s; 
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- border-radius: 8px;
- margin: 12px;
+.pokemonCard {
+  background-color: #f8edeb;
+  width: 230px;
+  text-align: center;
+  transition: transform 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  margin: 12px;
 }
 
-.pokemonCard:hover{
-    transform: scale(1.05);
+.pokemonCard:hover {
+  transform: scale(1.05);
+}
+
+.name {
+  text-transform: capitalize;
+  font-family: "Bungee Inline", cursive;
+  color: blue;
 }

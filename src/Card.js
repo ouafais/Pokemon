@@ -6,7 +6,7 @@ class  Card extends Component {
 
   state ={
     pokemonID : this.props.id,
-    pokemon: {}
+    pokemon: {},
   }
 
   componentDidMount(){
@@ -15,17 +15,23 @@ class  Card extends Component {
       return response.json()
     })
     .then((result)=> {
-      this.setState({pokemon: result})
+        this.setState({pokemon: result})
+        
     })
   }
+  
+  
 
     
-  render () {return (
+  render () {
+    return (
        <div className='pokemonCard'>        
-        <img alt='pokemon' src={`https://pokeres.bastionbot.org/images/pokemon/${this.state.pokemonID}.png?`} width="200" height="200" />
-        <span className='name'>{this.state.pokemon.name} </span>        
+        {/*<img alt='pokemon' src={`https://pokeres.bastionbot.org/images/pokemon/${this.state.pokemonID}.png?`} width="200" height="200" />*/}
+        <span className='name'>{this.state.pokemon.name} </span>  
+        
        </div>
-     )}
+     )
+  }
 
 };
 
